@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Student Result Dashboard</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Student Results Dashboard</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Student Result Dashboard</h1>
+<div class="box">
+<h1>Student Results Dashboard</h1>
 <h2>AKINDELE OLUWATOBI AUGUSTINA</h2>
-<p>Maths: 85 - Pass</p>
-<p>English: 78 - Pass</p>
-<p>Computer: 92 - Pass</p>
-<p>Physics: 35 - Fail</p>
-<button onclick="window.print()">Print Result</button>
+<table>
+<tr><th>Subject</th><th>Score</th><th>Status</th></tr>
+<tr><td>Mathematics</td><td>85</td><td class="pass">Pass</td></tr>
+<tr><td>English</td><td>78</td><td class="pass">Pass</td></tr>
+<tr><td>Computer Science</td><td>92</td><td class="pass">Pass</td></tr>
+<tr><td>Physics</td><td>35</td><td class="fail">Fail</td></tr>
+</table>
+<button onclick="printResult()">Print Result</button>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
